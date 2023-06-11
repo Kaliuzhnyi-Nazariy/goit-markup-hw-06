@@ -673,6 +673,7 @@ body {
   position: absolute;
   /* left: 516px;
   top: 80px; */
+  padding: 72px 24px 24px 24px;
 
   left: 50%;
   top: 50%;
@@ -732,11 +733,11 @@ body {
   fill: var(--primary-white);
 }
 
-.in-modal {
-  padding: 72px 24px 24px 24px;
+/* .in-modal {
+  
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
 .in-modal .modal-title {
   display: block;
