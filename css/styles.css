@@ -1,7 +1,7 @@
 :root {
   --general-text-color: #434455;
   --footer-text-color: #f4f4fd;
-  --title-text-color: rgb(46, 47, 66);
+  --title-text-color: #2e2f42;
   --primty-brand: #4d5ae5;
   --CTA: #404bbf;
   --port-but: #e7e9fc;
@@ -733,12 +733,12 @@ body {
 }
 
 .in-modal {
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.in-modal b {
+.in-modal .modal-title {
   display: block;
   text-align: center;
   justify-content: center;
@@ -747,21 +747,24 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
 
-  margin-top: 48px;
   margin-bottom: 16px;
 }
 
-.in-modal .title-mod {
+.label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 0.85;
+  line-height: 1.17;
 
   letter-spacing: 0.04em;
 
   color: #8e8f99;
 
-  /* margin-top: 8px; */
+  display: block;
+  margin-top: 4px;
 }
 
 .form-input {
@@ -1003,8 +1006,8 @@ textarea::placeholder {
   gap: 24px;
 }
 
-.mail-podpis{
-margin-left: 80px;
+.mail-podpis {
+  margin-left: 80px;
 }
 
 .e-mail {
@@ -1049,8 +1052,8 @@ input::placeholder {
   color: var(--primary-white);
   min-width: 165px;
   height: 40px;
-
-  margin-left: 24px;
+  /* 
+  margin-left: 24px; */
 }
 
 .submail {
