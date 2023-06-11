@@ -733,9 +733,8 @@ body {
   fill: var(--primary-white);
 }
 
-.user-name,
-.user-phone,
-.user-mail {
+.user-point
+ {
   margin-bottom: 8px;
 }
 
