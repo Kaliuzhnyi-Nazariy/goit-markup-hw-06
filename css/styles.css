@@ -733,7 +733,7 @@ body {
   fill: var(--primary-white);
 }
 
-.in-modal {
+.name-form {
   margin-bottom: 8px;
 }
 
@@ -763,24 +763,29 @@ body {
   color: #8e8f99;
 
   display: block;
-  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .form-input {
-  margin-top: 4px;
+  width: 100%;
+  height: 40px;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   /* var(--title-text-color, 40%) */
   border-radius: 4px;
 
+  background-color: transparent;
+  outline: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   padding: 14px 20px;
   padding-left: 38px;
 }
 
-.form-field {
-  position: relative;
-  /* display: block; */
-  margin-bottom: 8px;
+.form-input:focus-within {
+  border-color: var(--primty-brand);
+
 }
 
 .modal-img {
@@ -790,16 +795,17 @@ body {
   transform: translateY(-50%);
 }
 
-.form-input {
-  width: 100%;
-}
-
-.form-input:focus-within + .input-img {
-  border-color: var(--primty-brand);
+.form-input:focus-within + .modal-img {
   fill: var(--primty-brand);
 }
 
-.in-modal textarea {
+.form-field {
+  position: relative;
+  /* display: block; */
+  margin-bottom: 8px;
+}
+
+.textarea {
   resize: none;
   display: block;
   width: 100%;
