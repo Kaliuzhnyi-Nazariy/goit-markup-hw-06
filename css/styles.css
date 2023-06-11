@@ -739,7 +739,7 @@ body {
   margin-left: auto;
 } */
 
-.in-modal .modal-title {
+.modal-title {
   display: block;
   text-align: center;
   justify-content: center;
