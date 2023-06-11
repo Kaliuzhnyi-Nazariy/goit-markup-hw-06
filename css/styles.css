@@ -1001,15 +1001,11 @@ textarea::placeholder {
   /* outline: 1px solid tomato; */
 
   display: flex;
-  object-position: bottom;
-  justify-content: center;
-  align-items: center;
-
-  margin-left: 80px;
+  gap: 24px;
 }
 
-.mailing-list input {
-  /* width: 100%; */
+.email {
+  /* width: 100%; */  
   margin-top: 16px;
   height: 40px;
   width: 264px;
@@ -1024,6 +1020,11 @@ textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 0.5;
+  letter-spacing: 0.04em;
+}
+
+.filter {
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 input::placeholder {
@@ -1048,7 +1049,7 @@ input::placeholder {
 .sub::after {
   content: "";
   display: flex;
-  height: 20px;
+  height: 24px;
   width: 24px;
   background-image: url(../images/icon-send.svg);
   background-repeat: no-repeat;
@@ -1057,6 +1058,6 @@ input::placeholder {
 }
 
 .submail {
-  display: flex;
+  display: flex; 
   align-items: center;
 }
