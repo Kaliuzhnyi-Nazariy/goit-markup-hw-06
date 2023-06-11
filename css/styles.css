@@ -880,7 +880,7 @@ textarea::placeholder {
   align-items: center;
 }
 
-.label a {
+.label .upp {
   color: var(--primty-brand);
 }
 
