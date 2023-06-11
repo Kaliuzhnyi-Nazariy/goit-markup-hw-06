@@ -733,8 +733,18 @@ body {
   fill: var(--primary-white);
 }
 
-.name-form {
+.user-name,
+.user-phone,
+.user-mail {
   margin-bottom: 8px;
+}
+
+.comment-form {
+  margin-bottom: 16px;
+}
+
+.checkbox-form {
+  margin-bottom: 24px;
 }
 
 .modal-title {
@@ -785,7 +795,6 @@ body {
 
 .form-input:focus-within {
   border-color: var(--primty-brand);
-
 }
 
 .modal-img {
@@ -823,7 +832,9 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 0.85;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 textarea::placeholder {
@@ -835,29 +846,29 @@ textarea::placeholder {
 }
 
 .chebox {
-  display: inline-block;
+  display: inline-flex;
   width: 16px;
   height: 16px;
   border: 2px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   margin-right: 8px;
 
-  background-image: url(../images/icons.svg#icon-Accept);
-  background-size: contain;
   align-items: center;
   justify-content: center;
+
+  fill: transparent;
 }
 
-.checkbox:checked ~ .chebox {
-  background-origin: border-box;
+.visually-hidden:checked ~ .chebox {
+  border: none;
   background-color: var(--CTA);
-  border: transparent;
+  fill: var(--team-bg);
 }
 
-.checkbox {
+/* .checkbox {
   appearance: none;
   position: absolute;
-}
+} */
 
 .policy {
   display: flex;
