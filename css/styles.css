@@ -733,11 +733,9 @@ body {
   fill: var(--primary-white);
 }
 
-/* .in-modal {
-  
-  margin-right: auto;
-  margin-left: auto;
-} */
+.in-modal {
+  margin-bottom: 8px;
+}
 
 .modal-title {
   display: block;
