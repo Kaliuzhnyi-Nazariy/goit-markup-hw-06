@@ -1070,9 +1070,8 @@ textarea::placeholder {
   letter-spacing: 0.04em;
 }
 
-.filter {
-  drop-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
-}
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
+
 
 input::placeholder {
   color: var(--primary-white);
